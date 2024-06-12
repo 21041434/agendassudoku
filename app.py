@@ -76,7 +76,7 @@ if selected == "Reservar":
     nombre = c1.text_input("Nombre del alumn@*", placeholder=("Nombre"))
     email = c2.text_input("Tu email*", placeholder=("Email"))
     fecha = c1.date_input("Fecha")   
-    hora = c2._selectbox("Hora", horas)
+    hora = c2.selectbox("Hora", horas)
     materia = c1.selectbox("Materia",materias)
     notas = c2.text_area("Notas", placeholder=("Notas adicionales, especificaciones, etc..."))
     boton_enviar = st.button("Reservar")
